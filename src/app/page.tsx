@@ -8,6 +8,8 @@ import Link from "next/link";
 
 export default async function Home() {
   const { userId }: { userId: string | null } = auth();
+  console.log("User");
+  console.log(userId);
 
   return (
     <div className="w-screen min-h-screen bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
